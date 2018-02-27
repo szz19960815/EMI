@@ -1,0 +1,26 @@
+{
+	"status" : "1",
+	"mes" : "成功",
+	"data" : [
+		{"imgSrc" : "img/u=2024155542,1772227562&fm=200&gp=0.jpg","title" : "四川","pinyin":"sichuan","id" : "1"},
+		{"imgSrc" : "img/u=1835719745,2835999155&fm=27&gp=0.jpg","title" : "北京","pinyin":"beijin","id" : "2"},
+		{"imgSrc" : "img/u=4121537033,2008026229&fm=27&gp=0.jpg","title" : "重庆","pinyin":"chongqin","id" : "3"},
+		{"imgSrc" : "img/u=2398423642,2497090190&fm=27&gp=0.jpg","title" : "天津","pinyin":"tianjin","id" : "4"},
+		{"imgSrc" : "img/u=4028478531,1140846960&fm=27&gp=0.jpg","title" : "上海","pinyin":"shanghai","id" : "5"},
+		{"imgSrc" : "img/u=2988987423,1676725678&fm=27&gp=0.jpg","title" : "深圳","pinyin":"shenzhen","id" : "6"},
+		{"imgSrc" : "img/u=3848568698,1766321960&fm=27&gp=0.jpg","title" : "广东","pinyin":"guangdong","id" : "7"},
+		{"imgSrc" : "img/u=1331657760,4108167946&fm=27&gp=0.jpg","title" : "浙江","pinyin":"zhejiang","id" : "8"},
+		{"imgSrc" : "img/u=3117040912,3139747547&fm=27&gp=0.jpg","title" : "香港","pinyin":"xianggang","id" : "9"},
+		{"imgSrc" : "img/u=2735576409,563239873&fm=27&gp=0.jpg","title" : "吉林","pinyin":"jilin","id" : "10"},
+		{"imgSrc" : "img/u=1117370107,1677125821&fm=27&gp=0.jpg","title" : "内蒙古","pinyin":"neimenggu","id" : "11"},
+		{"imgSrc" : "img/u=4046423863,3684060278&fm=27&gp=0.jpg","title" : "黑龙江","pinyin":"heilongjiang","id" : "12"}
+	],
+	"banner":[
+		{"name":"recommend","banner":"img/u=2638958789,2459913775&fm=200&gp=0.jpg","time":"12月19日起","title":"五个京郊好去处，不容错过"},
+		{"name":"recommend","banner":"img/u=151250720,3803548463&fm=200&gp=0.jpg","time":"12月19日起","title":"离市区最近的旅游好去处"},
+		{"name":"recommend","banner":"img/u=3950273447,1535717820&fm=27&gp=0.jpg","time":"12月19日起","title":"2018美食季，一起来嗨吧"},
+		{"name":"recommend","banner":"img/u=2431361076,4242047353&fm=200&gp=0.jpg","time":"12月19日起","title":"欢乐游蜀都，必买手办Mark"},
+		{"name":"recommend","banner":"img/u=1859821161,2204724509&fm=27&gp=0.jpg","time":"12月19日起","title":"成都三大高端酒店,顶级服务"},
+		{"name":"recommend","banner":"img/travel_con1_pic4.png","time":"12月19日起","title":"五个京郊好去处，不容错过"}
+	]
+}

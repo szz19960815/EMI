@@ -1,0 +1,75 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#D-body .main{
+	overflow: hidden;
+	flex: 1;
+	position: relative;
+}
+#D-body .main .box{
+	position: relative;
+}
+#D-body .map{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	display: none;
+	background-color: white;
+}
+#D-body .map p{
+	height: 5%;
+	border-bottom:2px solid #007AFF ;
+}
+#D-body .map p span{
+	float: right;
+	font-size: 1.5rem;
+	margin-right: 0.3rem;
+}
+#D-body #container{
+	height: 95%;
+	width: 100%;
+}
+#D-body .main .box #ic{
+	position: absolute;
+	top: 1.7rem;
+	left: 0.7rem;
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	z-index: 99;
+}
+#D-body .main .box .iconfont{
+	font-size: 1rem !important;
+	color: white;
+	font-weight: 900;
+}
+#D-body .main .box div{
+	position: relative;
+	height: 6rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+#D-body .main .box div img{
+	position: absolute;
+	top:-20%;
+	width: 100%;
+	z-index: -1;
+}
+#D-body .main .box div p{
+	width: 100%;
+	font-size: 1rem;
+	color: white;
+	text-indent: 2rem;
+	height: 1.6rem;
+	line-height: 1.6rem;
+}
+footer li:nth-child(2) i{
+	color: #4dc1ea !important;
+}

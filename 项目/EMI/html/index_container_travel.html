@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="css/culling.css" />
+<!--旅行推荐-->
+<div class="index_container_travel">
+	<div class="tourism">
+		<div class="tourism S_title">
+			<h3>看的见的中国史</h3>
+		</div>
+		<ul></ul>
+	</div>
+	<div class="tourism">
+		<div class="tourism S_title">
+			<h3>寻找丝路消失的帝国</h3>
+		</div>
+		<ul></ul>
+	</div>
+</div>
+<script type="text/javascript">
+	$.ajax({
+		type:"get",
+		url:"mock/culling.json",
+		async:true,
+		dataType:"json",
+		success:function(data){
+			$.each(data, function(i) {
+				if(data[i].name == "tourism"){
+					var tourism = data[i].data;
+					$.each(tourism, function(i) {
+//						console.log(tourism[i])
+						var _li = $("<li></li>");	
+						var _a = $("<a></a>");
+						var _img = $("<img src='"+tourism[i].banner+"' />");
+						var _p1 = $("<p>"+tourism[i].title+"</p>");
+						var _p2 = $("<p>"+tourism[i].cue+"</p>");
+						var _p3 = $("<p>"+tourism[i].price+"</p>");
+						_a.append(_img);
+						_a.append(_p1);
+						_a.append(_p2);
+						_a.append(_p3);
+						_li.append(_a);
+						$(".tourism ul").append(_li);
+						
+					});
+				}
+			});
+		}
+	});
+</script>

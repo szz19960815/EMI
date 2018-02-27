@@ -1,0 +1,244 @@
+<link rel="stylesheet" href="css/culling.css" />
+<!--top20-->
+<div class="culling_top20">
+	<div class="culling_title">
+		<h2>百代TOP20 <span>1 <b>/1</b></span></h2>
+		<p>永不落幕的博览会</p>
+	</div>
+	<div class="culling_banner">
+	</div>
+	<div class="culling_info">
+		<p>中国旅游创新目的地评选</p>
+		<h3>中国旅游创新目的地评选</h3>
+		<p>中国旅游创新目的地评选</p>
+	</div>
+</div>
+<!--婚礼大赏-->
+<div class="culling_wedding">
+	<div class="wedding_title S_title" style="border-bottom: 0.05rem solid #DDDDDD; height: 2.46rem;">
+		<p style="font-size:0.6rem;color: black;height: 0.866rem;margin-top: 0.866rem;"><span style="display: inline-block;width: 3.133rem;height: 0.8666rem;border: 0.05rem solid #ff1129;color: #ff1129;font-size: 0.5rem;text-align: center;line-height: 0.9rem;margin-right:0.5rem;border-radius: 0.2rem;">最新出炉</span>2017全球最美婚礼大赏<a style="font-size0.55rem;float: right;color: #ff1129;" id="more-weeding">更多</a></p>
+	</div>
+	<div class="wedding-banner S_banner">
+		<!--<img src="img/wedding-banner.png"/>-->
+	</div>
+	<div class="wedding-show S_show">
+		<ul></ul>
+	</div>
+</div>
+<!--人文旅行研修-->
+<div class="culling_travel">
+	<div class="travel_title S_title">
+		<h3>人文旅行研修课程<span>更多</span></h3>
+		<p>经典人文路线推荐</p>
+	</div>
+	<div class="con1">
+		<div class="con1_title">
+			<h3><i class="iconfont icon-china"></i>看得见的中国史</h3>
+		</div>
+		<div class="con1_banner">
+			<!--<img src="img/travel_con1_banner.png"/>-->
+		</div>
+		<div class="con1_show">
+			<ul></ul>
+		</div>
+	</div>
+	<div class="con2">
+		<div class="con2_title">
+			<h3><i class="iconfont icon-17"></i>寻找丝路消失的帝国</h3>
+		</div>
+		<div class="con2_banner">
+			<!--<img src="img/travel_con1_banner.png"/>-->
+		</div>
+		<div class="con2_show">
+			<ul></ul>
+		</div>
+	</div>
+</div>
+<!--国家人文直播-->
+<div class="national">
+	<div class="national_title S_title">
+		<h3>国家人文直播<span>更多</span></h3>
+		<p>足不出户，上直播看遍世界艺术</p>
+	</div>
+	<div class="national_banner S_banner">
+		<!--<img src="img/national_banner.png"/>-->
+	</div>
+	<div class="national_show S_show">
+		<ul></ul>
+	</div>
+</div>
+<!--读城中国-->
+<div class="readcity">
+	<div class="readcity_title S_title">
+		<h3>读城中国<span>更多</span></h3>
+		<p>世界「观」不同</p>
+	</div>
+	<div class="readcity_banner S_banner">
+		<!--<img src="img/readcity_banner.png"/>-->
+	</div>
+	<div class="readcity_show S_show">
+		<ul></ul>
+	</div>
+</div>
+<!--发现精彩-->
+<div class="find">
+	<div class="find_title S_title">
+		<h3>发现精彩</h3>
+		<p>更多未知世界</p>
+	</div>
+</div>
+<script type="text/javascript">
+	$.ajax({
+		type:"get",
+		url:"mock/culling.json",
+		async:true,
+		dataType:"json",
+		success:function(data){
+//			console.log(data)
+			$.each(data, function(i) {
+//				console.log(data[i].banner)
+				//加载top20的banner
+				if(data[i].name == "culling_top20"){
+					var _banner = $("<img src='"+data[i].banner+"' />");
+//					var _time = 
+					$(".culling_banner").append(_banner);
+				}
+				//加载婚礼大赏的banner和排行情况
+				if(data[i].name == "wedding"){
+					var _wedding = data[i].data;
+//					console.log(_wedding)
+					var wedding_banner = $("<img src='"+data[i].banner+"' />");
+					$(".wedding-banner").append(wedding_banner);
+					$.each(_wedding, function(j) {
+//						console.log(_wedding[j].show_img);
+						var wedding_li = $("<li></li>");
+						var wedding_a = $("<a></a>");
+						var wedding_showImg = $("<img src='"+_wedding[j].show_img+"' />");
+						var wedding_span = $("<span></span>");
+						var wedding_p1 = $("<p>"+_wedding[j].addr+"</p>");
+						var wedding_p2 = $("<p>"+_wedding[j].cue+"</p>");
+						var wedding_p3 = $("<p>"+_wedding[j].vote+"</p>");
+						wedding_span.append(wedding_p1);
+						wedding_span.append(wedding_p2);
+						wedding_span.append(wedding_p3);
+						wedding_a.append(wedding_showImg);
+						wedding_a.append(wedding_span);
+						wedding_li.append(wedding_a);
+						$(".wedding-show ul").append(wedding_li);
+					});
+				}
+				//加载人文旅游第一部分
+				if(data[i].name == "travel_con1"){
+					var travel_con1 = data[i].data;
+//					console.log(travel_con1)
+					var travel_banner = $("<img src='"+data[i].banner+"' />");
+					$(".con1_banner").append(travel_banner);
+					$.each(travel_con1, function(j) {
+//						console.log(travel_con1[j].show_img);
+						var wedding_li = $("<li></li>");
+						var wedding_a = $("<a></a>");
+						var wedding_showImg = $("<img src='"+travel_con1[j].show_img+"' />");
+						var wedding_span = $("<span></span>");
+						var wedding_p1 = $("<p>"+travel_con1[j].dynasty+"</p>");
+						var wedding_p2 = $("<p>"+travel_con1[j].cue+"</p>");
+						var wedding_p3 = $("<p>"+travel_con1[j].price+"</p>");
+						wedding_span.append(wedding_p1);
+						wedding_span.append(wedding_p2);
+						wedding_span.append(wedding_p3);
+						wedding_a.append(wedding_showImg);
+						wedding_a.append(wedding_span);
+						wedding_li.append(wedding_a);
+						$(".con1_show ul").append(wedding_li);
+					});
+				}
+				//加载人文旅游第二部分
+				if(data[i].name == "travel_con2"){
+					var travel_con2 = data[i].data;
+//					console.log(travel_con1)
+					var travel_banner = $("<img src='"+data[i].banner+"' />");
+					$(".con2_banner").append(travel_banner);
+					$.each(travel_con2, function(j) {
+//						console.log(travel_con2[j].show_img);
+						var wedding_li = $("<li></li>");
+						var wedding_a = $("<a></a>");
+						var wedding_showImg = $("<img src='"+travel_con2[j].show_img+"' />");
+						var wedding_span = $("<span></span>");
+						var wedding_p1 = $("<p>"+travel_con2[j].dynasty+"</p>");
+						var wedding_p2 = $("<p>"+travel_con2[j].cue+"</p>");
+						var wedding_p3 = $("<p>"+travel_con2[j].price+"</p>");
+						wedding_span.append(wedding_p1);
+						wedding_span.append(wedding_p2);
+						wedding_span.append(wedding_p3);
+						wedding_a.append(wedding_showImg);
+						wedding_a.append(wedding_span);
+						wedding_li.append(wedding_a);
+						$(".con2_show ul").append(wedding_li);
+					});
+				}
+				//加载国家人文直播
+				if(data[i].name == "national"){
+					var national = data[i].data;
+//					console.log(travel_con1)
+					var national_banner = $("<img src='"+data[i].banner+"' />");
+					$(".national_banner").append(national_banner);
+					$.each(national, function(j) {
+//						console.log(travel_con2[j].show_img);
+						var wedding_li = $("<li></li>");
+						var wedding_a = $("<a></a>");
+						var wedding_showImg = $("<img src='"+national[j].show_img+"' />");
+						var wedding_span = $("<span></span>");
+						var wedding_p1 = $("<p>"+national[j].title+"</p>");
+						var wedding_p2 = $("<p>"+national[j].cue+"</p>");
+						var wedding_p3 = $("<p>"+national[j].time+"</p>");
+						wedding_span.append(wedding_p1);
+						wedding_span.append(wedding_p2);
+						wedding_span.append(wedding_p3);
+						wedding_a.append(wedding_showImg);
+						wedding_a.append(wedding_span);
+						wedding_li.append(wedding_a);
+						$(".national_show ul").append(wedding_li);
+					});
+				}
+				//加载读城中国
+				if(data[i].name == "readcity"){
+					var readcity = data[i].data;
+//					console.log(travel_con1)
+					var readcity_banner = $("<img src='"+data[i].banner+"' />");
+					$(".readcity_banner").append(readcity_banner);
+					$.each(readcity, function(j) {
+//						console.log(travel_con2[j].show_img);
+						var wedding_li = $("<li></li>");
+						var wedding_a = $("<a></a>");
+						var wedding_showImg = $("<img src='"+readcity[j].show_img+"' />");
+						var wedding_span = $("<span></span>");
+						var wedding_p1 = $("<p>"+readcity[j].title+"</p>");
+						var wedding_p2 = $("<p>"+readcity[j].cue+"</p>");
+						var wedding_p3 = $("<p>"+readcity[j].time+"</p>");
+						wedding_span.append(wedding_p1);
+						wedding_span.append(wedding_p2);
+						wedding_span.append(wedding_p3);
+						wedding_a.append(wedding_showImg);
+						wedding_a.append(wedding_span);
+						wedding_li.append(wedding_a);
+						$(".readcity_show ul").append(wedding_li);
+					});
+				}
+				//加载发现精彩
+				if(data[i].name == "find"){
+					var find = data[i].data;
+//					console.log(find)
+//					var find_banner = $("<img src='"+data[i].banner+"' />");
+//					$(".find_banner").append(find_banner);
+					$.each(find, function(i) {
+//						console.log(find[i].show_img)
+						var find_pic = $("<div></div>");
+						find_pic.addClass("S_banner");
+						var find_img = $("<img src='"+find[i].show_img+"' />");
+						find_pic.append(find_img);
+						$(".find").append(find_pic);
+					});
+				}
+			});
+		}
+	});
+</script>

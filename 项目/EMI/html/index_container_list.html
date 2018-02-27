@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="css/culling.css" />
+<!--创新目的地评选-->
+<div class="culling_top20">
+	<div class="culling_banner" style="margin-top: 0.8rem;">
+	</div>
+	<div class="culling_info">
+		<p>中国旅游创新目的地评选</p>
+		<h3>中国旅游创新目的地评选</h3>
+		<p>中国旅游创新目的地评选</p>
+	</div>
+</div>
+<!--top榜单-->
+<div class="culling_wedding">
+	<div class="wedding_title S_title" style="height: 3.33rem;">
+		<h3>TOP榜单</h3>
+	</div>
+	<div class="wedding-banner S_banner">
+		<!--<img src="img/wedding-banner.png"/>-->
+	</div>
+	<div class="wedding-show S_show">
+		<ul></ul>
+	</div>
+</div>
+<!--机场免税店-->
+<div class="culling_top20">
+	<div class="culling_banner2" style="margin-top: 0.8rem;">
+	</div>
+	<div class="culling_info">
+		<p>01月11日</p>
+		<h3>2018全球最佳机场免税店百代TOP20</h3>
+		<p>血拼全球，大买四方，将“剁手”进行到底！</p>
+	</div>
+</div>
+<!--百代top20推送-->
+<div class="listInfo">
+	<ul>
+		<!--<li><a><img src="img/listInfo1.png" /><p>2018国内最佳“佛系”</p><p>转山，转水，转佛塔</p><p>1月4日</p></a></li>
+		<li><a><img src="img/listInfo1.png" /><p>2018国内最佳“佛系”</p><p>转山，转水，转佛塔</p><p>1月4日</p></a></li>
+		<li><a><img src="img/listInfo1.png" /><p>2018国内最佳“佛系”</p><p>转山，转水，转佛塔</p><p>1月4日</p></a></li>
+		<li><a><img src="img/listInfo1.png" /><p>2018国内最佳“佛系”</p><p>转山，转水，转佛塔</p><p>1月4日</p></a></li>-->
+	</ul>
+</div>
+<!--旅行推荐-->
+<div class="tourism">
+	<div class="tourism S_title">
+		<h3>旅行推荐</h3>
+		<p>经典人文线路推荐</p>
+	</div>
+	<ul></ul>
+</div>
+<script type="text/javascript">
+	$.ajax({
+		type:"get",
+		url:"mock/culling.json",
+		async:true,
+		dataType:"json",
+		success:function(data){
+			$.each(data, function(i) {
+				//加载top20
+				if(data[i].name == "culling_top20"){
+//					console.log(data[i])
+					var _banner = $("<img src='"+data[i].banner+"' />");
+					var _banner2 = $("<img src='"+data[i].banner+"' />")
+					$(".culling_banner").append(_banner);
+					$(".culling_banner2").append(_banner2);
+				}
+				//加载TOP榜单
+				if(data[i].name == "wedding"){
+					var _wedding = data[i].data;
+					var wedding_banner = $("<img src='"+data[i].banner+"' />");
+					$(".wedding-banner").append(wedding_banner); 
+					$.each(_wedding, function(j) {
+//						console.log(_wedding[j].show_img);
+						var wedding_li = $("<li></li>");
+						var wedding_a = $("<a></a>");
+						var wedding_showImg = $("<img src='"+_wedding[j].show_img+"' />");
+						var wedding_span = $("<span></span>");
+						var wedding_p1 = $("<p>"+_wedding[j].addr+"</p>");
+						var wedding_p2 = $("<p>"+_wedding[j].cue+"</p>");
+						var wedding_p3 = $("<p>"+_wedding[j].vote+"</p>");
+						wedding_span.append(wedding_p1);
+						wedding_span.append(wedding_p2);
+						wedding_span.append(wedding_p3);
+						wedding_a.append(wedding_showImg);
+						wedding_a.append(wedding_span);
+						wedding_li.append(wedding_a);
+						$(".wedding-show ul").append(wedding_li);
+					});
+				}
+				//加载推送列表
+				if(data[i].name == "listInfo"){
+//					console.log(data[i])
+					var _list = data[i].data;
+					$.each(_list, function(i) {
+//						console.log(_list[i])
+						var _li = $("<li></li>");	
+						var _a = $("<a></a>");
+						var _img = $("<img src='"+_list[i].show+"' />");
+						var _p1 = $("<p>"+_list[i].title+"</p>");
+						var _p2 = $("<p>"+_list[i].cue+"</p>");
+						var _p3 = $("<p>"+_list[i].time+"</p>");
+						_a.append(_img);
+						_a.append(_p1);
+						_a.append(_p2);
+						_a.append(_p3);
+						_li.append(_a);
+						$(".listInfo ul").append(_li);
+					});
+				}
+				//加载旅游推荐
+				if(data[i].name == "tourism"){
+//					console.log(data[i])
+					var tourism = data[i].data;
+					$.each(tourism, function(i) {
+//						console.log(tourism[i])
+						var _li = $("<li></li>");	
+						var _a = $("<a></a>");
+						var _img = $("<img src='"+tourism[i].banner+"' />");
+						var _p1 = $("<p>"+tourism[i].title+"</p>");
+						var _p2 = $("<p>"+tourism[i].cue+"</p>");
+						var _p3 = $("<p>"+tourism[i].price+"</p>");
+						_a.append(_img);
+						_a.append(_p1);
+						_a.append(_p2);
+						_a.append(_p3);
+						_li.append(_a);
+						$(".tourism ul").append(_li);
+					});
+				}
+			});
+		}
+	});
+</script>

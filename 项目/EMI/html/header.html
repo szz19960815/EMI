@@ -1,0 +1,105 @@
+<div class="C_title">
+	<h3>2018年中国旅游创新目的地评选</h3>
+	<div class="C_search camera" style="margin-top: 0.6rem; width:1.3rem;height:1.3rem;background: url(img/crame.jpg) no-repeat center center;background-size:100% 100%;"></div>
+</div>
+<div class="C_banner"></div>
+<div class="C_nav"></div>
+
+<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+<script type="text/javascript">
+	//拍照和录像
+$(".camera").on("touchstart",function(){
+	//创建选择面板
+	var choice = $("<div></div>");
+	choice.addClass("choice")
+	choice.css({
+		"position":"fixed",
+		"top":"0",
+		"width":"100%",
+		"height":"100%",
+		"background":"black",
+		"opacity":"0.6",
+		"z-index":"9999"
+	});
+	var leter = $("<div></div>");
+	leter.addClass("leter");
+	leter.css({
+		"position":"fixed",
+		"top":"0",
+		"width":"60%",
+		"height":"40%",
+		"background":"white",
+		"margin":"30% 20%",
+		"z-index":"100000"
+	});
+	var photograph = $("<button onclick='pic()'>拍照</button>");
+	photograph.css({
+		"display":"block",
+		"width":"60%",
+		"color":"white",
+		"margin":"20% 20%",
+		"height":"15%",
+		"border": "1px solid #1e7db9",
+    	"box-shadow": "0 1px 2px #8fcaee inset, 0 -1px 0 #497897 inset, 0 -2px 3px #8fcaee inset",
+   		"background": "-webkit-linear-gradient(top,#42a4e0,#2e88c0)"
+	});
+	var video = $("<button onclick='video()'>录像</button>");
+	video.css({
+		"display":"block",
+		"width":"60%",
+		"color":"white",
+		"margin":"20% 20%",
+		"height":"15%",
+		"border": "1px solid #1e7db9",
+    	"box-shadow": "0 1px 2px #8fcaee inset, 0 -1px 0 #497897 inset, 0 -2px 3px #8fcaee inset",
+   		"background": "-webkit-linear-gradient(top,#42a4e0,#2e88c0)"
+	});
+	var cancel = $("<span onclick='cancel()'>X</span>");
+	cancel.css({
+		"position":"absolute",
+		"top":"0.5rem",
+		"right":"0.5rem",
+		"color":"red"
+	});
+	
+	leter.append(cancel);
+	leter.append(photograph);
+	leter.append(video);
+	$("body").append(leter);
+	$("body").append(choice);
+})
+
+function cancel(){
+	$("body .leter").remove();
+	$("body .choice").remove();
+}
+
+function pic(){
+	$("body .leter").remove();
+	$("body .choice").remove();
+		var cmr = plus.camera.getCamera()
+      		var res = cmr.supportedImageResolutions[0]
+      		var fors = cmr.supportedImageFormats[0]
+      		console.log(res+","+fors)
+      		cmr.captureImage(function(path){
+      			var rote = plus.io.convertLocalFileSystemURL(path)
+      			console.log(rote)
+      		})
+}
+
+function video(){
+	$("body .leter").remove();
+	$("body .choice").remove();
+	var cmr = plus.camera.getCamera()
+      		var res = cmr.supportedVideoResolutions[0]
+      		var fors = cmr.supportedVideoFormats[0]
+      		console.log(res+","+fors)
+      		setTimeout(function(){
+      			cmr.stopVideoCapture()
+      		},1000)
+      		cmr.startVideoCapture(function(path){
+      			var rote = plus.io.convertLocalFileSystemURL(path)
+      			console.log(rotes)
+      		})
+}
+</script>

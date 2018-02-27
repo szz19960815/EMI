@@ -1,0 +1,616 @@
+@charset "utf-8";
+
+/*top20*/
+.culling_top20 .culling_title{
+	width: 16rem;
+	height: 4.65rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.culling_top20 .culling_title>h2{
+	color: black;
+	height: 1.16rem;
+	line-height: 1.16rem;
+	font-size: 1.1rem;
+	font-family: "microsoft yahei";
+	margin-top: 1.63rem;
+}
+
+.culling_top20 .culling_title>h2>span{
+	margin-top: 0.66rem;
+	float: right;
+	color: #ea3721;
+}
+
+.culling_top20 .culling_title>h2>span>b{
+	font-size: 0.45rem;
+	color: #f1dbde;
+}
+
+.culling_top20 .culling_title>p{
+	margin-top: 0.33rem;
+	color: #9c9c9c;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 0.6rem;
+}
+
+.culling_top20 .culling_banner{
+	width: 16rem;
+	height: 8.25rem;
+	margin: 0 auto;
+}
+
+.culling_top20 .culling_banner>img{
+	width: 100%;
+	height: 100%;
+}
+
+.culling_top20 .culling_banner2{
+	width: 16rem;
+	height: 8.25rem;
+	margin: 0 auto;
+}
+
+.culling_top20 .culling_banner2>img{
+	width: 100%;
+	height: 100%;
+}
+
+.culling_top20 .culling_info{
+	width: 16rem;
+	margin:0 auto;
+	border-bottom: 0.05rem solid #DDDDDD;
+}
+
+.culling_top20 .culling_info>p{
+	height: 1.45rem;
+	line-height: 1.45rem;
+	width: 100%;
+	font-size: 0.57rem;
+}
+
+.culling_top20 .culling_info>p:nth-of-type(1){
+	color: #df372c;
+}
+
+.culling_top20 .culling_info>p:nth-of-type(2){
+	color: #919191;
+}
+
+.culling_top20 .culling_info>h3{
+	height: 0.87rem;
+	line-height: 0.87rem;
+	font-size: 0.866rem;
+	color: black;
+}
+
+/*婚礼大赏*/
+
+/*人文旅行研修课程*/
+.culling_travel{
+	width: 100%;
+	overflow: hidden;
+}
+
+.culling_travel .con1 .con1_title{
+	width: 16rem;
+	height: 2.383rem;
+	margin: 0 auto;
+	border-bottom: 0.05rem solid #DDDDDD;
+	margin-bottom: 0.8rem;
+}
+
+.culling_travel .con1 .con1_title>h3{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.8rem;
+	color: black;
+	line-height: 2.83rem;
+}
+
+.culling_travel .con1 .con1_title>h3>i{
+	font-size: 0.8rem !important;
+	color: #4ac7dd !important;
+	margin-right: 0.25rem;
+}
+
+.culling_travel .con1 .con1_banner{
+	width: 16rem;
+	height: 7.25rem;
+	margin: 0 auto;
+	margin-bottom: 0.733rem;
+}
+
+.culling_travel .con1 .con1_banner>img{
+	width: 100%;
+	height: 100%;
+}
+
+.culling_travel .con1 .con1_show{
+	width: 16rem;
+	height: 8.7rem;
+	margin: 0 auto;
+	border-bottom: 0.05rem solid #DDDDDD;
+	overflow: auto;
+}
+
+.culling_travel .con1 .con1_show ul{
+	height: 100%;
+	width: 30rem;
+	overflow-x: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.culling_travel .con1 .con1_show ul li{
+	margin-right: 0.5rem;
+	float: left;
+	width: 7.75rem;
+	height: 100%;
+}
+
+.culling_travel .con1 .con1_show ul li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.culling_travel .con1 .con1_show ul li>a>img{
+	width: 100%;
+}
+
+.culling_travel .con1 .con1_show ul li>a>span{
+	display: flex;
+	height: 3.516rem;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.culling_travel .con1 .con1_show ul li>a>span>p{
+	width: 7.5rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.culling_travel .con1 .con1_show ul li>a>span>p:nth-child(1){
+	font-size: 0.75rem;
+	color: black;
+	font-weight: bold;
+}
+
+.culling_travel .con1 .con1_show ul li>a>span>p:nth-child(2){
+	font-size: 0.57rem;
+	color: #99999;
+}
+
+.culling_travel .con1 .con1_show ul li>a>span>p:nth-child(3){
+	font-size: 0.66rem;
+	color: #ff2027;
+}
+
+/*---------------con2----------------*/
+.culling_travel .con2 .con2_title{
+	width: 16rem;
+	height: 2.383rem;
+	margin: 0 auto;
+	border-bottom: 0.05rem solid #DDDDDD;
+	margin-bottom: 0.8rem;
+}
+
+.culling_travel .con2 .con2_title>h3{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 0.8rem;
+	color: black;
+	line-height: 2.83rem;
+}
+
+.culling_travel .con2 .con2_title>h3>i{
+	font-size: 0.8rem !important;
+	color: #4ac7dd !important;
+	margin-right: 0.25rem;
+}
+
+.culling_travel .con2 .con2_banner{
+	width: 16rem;
+	height: 7.25rem;
+	margin: 0 auto;
+	margin-bottom: 0.733rem;
+}
+
+.culling_travel .con2 .con2_banner>img{
+	width: 100%;
+	height: 100%;
+}
+
+.culling_travel .con2 .con2_show{
+	width: 16rem;
+	height: 8.7rem;
+	margin: 0 auto;
+	border-bottom: 0.05rem solid #DDDDDD;
+	overflow: auto;
+}
+
+.culling_travel .con2 .con2_show ul{
+	height: 100%;
+	overflow-x: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.culling_travel .con2 .con2_show ul li{
+	margin-right: 0.5rem;
+	float: left;
+	width: 7.75rem;
+	height: 100%;
+}
+
+.culling_travel .con2 .con2_show ul li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.culling_travel .con2 .con2_show ul li>a>img{
+	width: 100%;
+}
+
+.culling_travel .con2 .con2_show ul li>a>span{
+	display: flex;
+	height: 3.516rem;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.culling_travel .con2 .con2_show ul li>a>span>p{
+	width: 7.5rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.culling_travel .con2 .con2_show ul li>a>span>p:nth-child(1){
+	font-size: 0.75rem;
+	color: black;
+	font-weight: bold;
+}
+
+.culling_travel .con2 .con2_show ul li>a>span>p:nth-child(2){
+	font-size: 0.57rem;
+	color: #99999;
+}
+
+.culling_travel .con2 .con2_show ul li>a>span>p:nth-child(3){
+	font-size: 0.66rem;
+	color: #ff2027;
+}
+
+/*国家人文直播*/
+/*-----------------------------------------------------------------------*/
+.S_title{
+	width: 16rem;
+	height: 4.333rem;
+	margin: 0 auto;
+	overflow: hidden;
+	border-bottom: 0.05rem solid #DDDDDD;
+}
+
+.S_title>h3{
+	height: 1.16rem;
+	line-height: 1.16rem;
+	margin-top: 1.16rem;
+	font-size: 1.1rem;
+	color: black;
+}
+
+.S_title>h3>span{
+	font-size: 0.6rem;
+	color: #ed212d;
+	float: right;
+	display: inline-block;
+	height: 1.16rem;
+	line-height: 1.16rem;
+}
+
+.S_title>p{
+	font-size: 0.6rem;
+	color: #999999;
+	margin-top: 0.4rem;
+}
+
+.S_banner{
+	width: 16rem;
+	height: 7.25rem;
+	margin: 0 auto;
+	margin-bottom: 0.766rem;
+}
+
+.S_banner>img{
+	width: 100%;
+	height: 100%;
+}
+
+.S_show{
+	width: 16rem;
+	height: 8.666rem;
+	margin: 0 auto;
+	border-bottom: 0.05rem solid #DDDDDD;
+	overflow: auto;
+}
+
+.S_show ul{
+	height: 100%;
+	overflow-x: auto;
+	width: 77.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.S_show ul li{
+	float: left;
+	width: 7.75rem;
+	height: 100%;
+	margin-right: 0.5rem;
+}
+
+.S_show ul li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.S_show ul li>a>img{
+	width: 100%;
+}
+
+.S_show ul li>a>span{
+	display: flex;
+	height: 3.516rem;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.S_show ul li>a>span>p{
+	width: 7.5rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.S_show ul li>a>span>p:nth-child(1){
+	font-size: 0.75rem;
+	color: black;
+	font-weight: bold;
+}
+
+.S_show ul li>a>span>p:nth-child(2){
+	font-size: 0.57rem;
+	color: #99999;
+}
+
+.S_show ul li>a>span>p:nth-child(3){
+	font-size: 0.66rem;
+	color: #ff2027;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+.listInfo{
+	width: 16rem;
+	margin: 0 auto;
+	background: white;
+	overflow: hidden;
+}
+
+.listInfo ul{
+	width: 100%;
+}
+
+.listInfo ul li:nth-of-type(2n+1){
+	margin-top: 1rem;
+	float: left;
+}
+
+.listInfo ul li:nth-of-type(2n){
+	float: right;
+	margin-top: 1rem;
+}
+
+.listInfo ul li>a{
+	display: flex;
+	width: 7.75rem;
+	height: 8.25rem;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.listInfo ul li>a>img{
+	width: 100%;
+}
+
+.listInfo ul li>a>p{
+	width:7.75rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.listInfo ul li>a>p:nth-of-type(1){
+	font-size: 0.7rem;
+	color: black;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.listInfo ul li>a>p:nth-of-type(2){
+	font-size: 0.65rem;
+	color: #989898;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.listInfo ul li>a>p:nth-of-type(3){
+	font-size: 0.57rem;
+	color: #df372c;
+}
+
+/*旅游推送*/
+.tourism>ul{
+	width:16rem;
+	margin: 0 auto;
+}
+
+.tourism>ul>li{
+	width: 100%;
+	height: 10.3rem;
+	overflow: hidden;
+	margin-bottom: 0.7666rem;
+}
+
+.tourism>ul>li>a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items:flex-start;
+}
+
+.tourism>ul>li>a>img{
+	width: 16rem;
+	height: 7.25rem;
+}
+
+.tourism>ul>li>a>p:nth-of-type(1){
+	height: 0.87rem;
+	line-height: 0.87rem;
+	font-size: 0.8rem;
+	color: black;
+}
+
+.tourism>ul>li>a>p:nth-of-type(2){
+	font-size: 0.57rem;
+	color: #919191;
+}
+
+.tourism>ul>li>a>p:nth-of-type(3){
+	font-size: 0.57rem;
+	color: #df372c;
+}
+/*人文旅行*/
+.index_container_travel h3{
+	text-align: center;
+}
+.index_container_travel ul li{
+	height: 11rem;
+}
+.index_container_travel ul li p:nth-of-type(1){
+	font-size: 0.66rem;
+}
+/************************************************************/
+/*国家人文*/
+.index_container_country{
+	position: relative;
+	overflow: hidden;
+}
+.index_container_country .review{
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: 1px solid #EEEEEE;
+}
+.index_container_country .review h3{
+	height: 3.5rem;
+	line-height: 3.5rem;
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.index_container_country .review ul li{
+	width: 100%;
+	height: 13.3rem;
+}
+.index_container_country .review ul li img{ 
+	width: 100%;
+	height: 8.33rem; 
+}
+.index_container_country .review ul li p{
+	width: 100%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	height: 1.2rem;
+	line-height: 1.5rem;
+	font-size: 0.6rem;
+}
+/*下面的小视屏*/
+.index_container_country .lists{
+	overflow: hidden;
+	width: 100%;
+	margin-top: 1rem;
+}
+.index_container_country .lists ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.index_container_country .lists ul li{
+	width: 48%;
+	height: 9.2rem;
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+.index_container_country .lists ul li p{
+	width: 100%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	font-size: 0.66rem;
+	height: 1rem;
+	line-height: 1.2rem;
+}
+.index_container_country .lists ul li img{
+	width: 100%;
+}
+
+
+/**************************************************************/
+/*读成中国*/
+.city ul{
+	border-bottom: 1px solid #EEEEEE;
+}
+.city ul li {
+	margin-left: 5%;
+	height: 11rem;
+	width: 90%;
+	margin-top: 1rem;
+}
+.city ul li img{
+	width: 100%;
+	height: 7.25rem;
+}
+.city ul li p:nth-of-type(1){
+	font-size: 0.8rem;
+	font-weight: 600;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	margin-top: 0.5rem;
+	color: black;
+}
+.city ul li p:nth-of-type(2){
+	height: 1.5rem;
+	line-height: 1.5rem;
+}

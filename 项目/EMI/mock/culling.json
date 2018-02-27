@@ -1,0 +1,104 @@
+[
+	{
+		"name":"culling_top20",
+		"banner":"img/culling-banner.jpg",
+		"banner2":"img/culling-banner2.png",
+		"time":"12月19日起",
+		"title":"中国旅游创新目的地评选"
+	},
+	{
+		"name":"wedding",
+		"banner":"img/wedding-banner.png",
+		"data":[
+			{"weddingId":1,"addr":"加利福尼亚","show_img":"img/wedding-pic1.png","cue":"许你一场自然主义户外婚礼","vote":"443票"},
+			{"weddingId":2,"addr":"大溪地","show_img":"img/wedding-pic2.png","cue":"南太平洋超级度假天堂","vote":"371票"},
+			{"weddingId":3,"addr":"五渔村","show_img":"img/wedding-pic3.png","cue":"走入中世纪婚纱照拍摄圣地","vote":"349票"},
+			{"weddingId":4,"addr":"三亚","show_img":"img/wedding-pic4.png","cue":"海洋主题婚礼，婚礼梦想圣地","vote":"327票"},
+			{"weddingId":5,"addr":"塞舌尔","show_img":"img/wedding-pic5.png","cue":"忠贞不渝的爱青岛","vote":"305票"},
+			{"weddingId":6,"addr":"留尼汪岛","show_img":"img/wedding-pic6.png","cue":"印度洋上的法式浪漫","vote":"303票"},
+			{"weddingId":7,"addr":"罗马","show_img":"img/wedding-pic7.png","cue":"邂逅属于你的罗马假日","vote":"289票"},
+			{"weddingId":8,"addr":"帕岸岛","show_img":"img/wedding-pic8.png","cue":"远离喧嚣的仙境之美","vote":"274票"},
+			{"weddingId":9,"addr":"昆士兰圣灵群岛","show_img":"img/wedding-pic9.png","cue":"心形珊瑚礁，全球最佳求婚地","vote":"271票"},
+			{"weddingId":10,"addr":"普吉岛","show_img":"img/wedding-pic10.png","cue":"明星婚礼圣地，收获永恒之恋","vote":"361票"}
+		]
+	},
+	{
+		"name":"travel_con1",
+		"banner":"img/travel_con1_banner.png",
+		"data":[
+			{"travel_con1Id":1,"dynasty":"看得见的大宋  苏杭线","show_img":"img/travel_con1_pic1.png","cue":"崖山之后再无中华？这些隐...","price":"￥2280"},
+			{"travel_con1Id":2,"dynasty":"看得见的北朝  河北线","show_img":"img/travel_con1_pic2.png","cue":"自古多慷慨悲歌之士的燕赵...","price":"￥2880"},
+			{"travel_con1Id":3,"dynasty":"看得见的大宋  中原线","show_img":"img/travel_con1_pic3.png","cue":"穿越风云动荡的王朝时代，...","price":"￥3480"},
+			{"travel_con1Id":4,"dynasty":"看得见的北朝  齐鲁线","show_img":"img/travel_con1_pic4.png","cue":"在遍地瑰宝的齐鲁大地上，...","price":"￥3280"}
+		]
+	},
+	{
+		"name":"travel_con2",
+		"banner":"img/travel_con2_banner.png",
+		"data":[
+			{"travel_con2Id":1,"dynasty":"吴哥文明研学探秘9日","show_img":"img/travel_con2_pic1.png","cue":"寻找丝路消失的高棉帝国","price":"￥15880"},
+			{"travel_con2Id":2,"dynasty":"摇曳在尼罗河上的千...","show_img":"img/travel_con2_pic2.png","cue":"寻找丝路消失的法老帝国","price":"￥14800"}
+		]
+	},
+	{
+		"name":"national",
+		"banner":"img/national_banner.png",
+		"data":[
+			{"nationalId":1,"title":"“独上高楼，望尽天涯路”中国教育史上一段无法复制的传奇","show_img":"img/national_pic1.png","cue":"王国维，字静安。是近现代史上公认的学术大师，曾担任清华导师，在诸多学术领域都做出了巨大的贡献，却在颐和园自沉，原因众说纷纭，成为学界一段未决的悬案。《国家人文》与您相约清华大学，走进学术大师背后的故事。","time":"01月07日  11：30"},
+			{"nationalId":2,"title":"故宫展哥窑瓷器，秀“金丝铁线”奇观","show_img":"img/national_pic2.png","cue":"五大名窑中，哥窑是比较特殊的一个。由于烧造传世哥窑瓷器的窑址至今未被发现，致使学术界对哥窑有诸多的说法，始终未能统一。《国家人文》与您一起，聆听吕成龙主任的讲解，走进润泽如穌的哥窑瓷器背后的故事。","time":"12月30日  19:00"},
+			{"nationalId":3,"title":"玩物不必丧志，收藏乃见情怀","show_img":"img/national_pic3.png","cue":"收藏不是投资，而是一种发自内心的着迷和执念，沉浸其中，乐趣无穷。收藏，藏的是对文化和生活的态度。《国家人文》带您走进彼岸书店，一同品味吴欢、谢玺璋、杨葵、张丁、解宏乾五位嘉宾的收藏之道。","time":"12月20日  14:05"},
+			{"nationalId":4,"title":"用语言的方式破解中国绘画的难题","show_img":"img/national_pic4.png","cue":"我们出生时便可发声，却不能轻松说好；我们出生时便可涂抹，却不能自如驾驭。绘画与语言如此相通，都源于传承，却在创造中发展。《国家人文》带您走进北京语言大学，由任重老师用语言的的方式，为大家破解中国绘画的难题。","time":"12月19日  16:36"},
+			{"nationalId":5,"title":"“新地标”敲响首槌，“嘉德年”异彩纷呈","show_img":"img/national_pic5.png","cue":"古都文脉诞新星，臻品荟萃重传承。在广大藏家的热切期盼中，中国嘉德2017秋季拍卖会如约而至。本季秋拍涵盖中国书画、当代艺术、珠宝钟表尚品等诸多门类。《国家人文》与您相约北京国际饭店，带您走进嘉德秋拍预展现场。","time":"12月15日  18:08"},
+			{"nationalId":6,"title":"国家人文 | 美院卅载刀笔相继","show_img":"img/national_pic6.png","cue":"王琦先生的一生中，为中国当代美术史做出了巨大的贡献。他坚持十日一画，多个作品现在都已成为经典。桑榆非晚，王琦先生晚年用其独创的焦墨重彩画再次让人们耳目一新。《国家人文》与您一起，走进王琦先生的艺术人生。","time":"12月08日  09:02"},
+			{"nationalId":7,"title":"欣赏臻品大师原作，领略“巴比松七星”风采","show_img":"img/national_pic7.png","cue":"巴比松画派里的七位著名的画家，他们以写实手法表现自然的外貌，并致力于探索自然界的内在生命，力求在作品中表达出画家对自然的真诚感受。《国家人文》与您相约中华世纪坛，带您近距离欣赏法国巴比松画派大师的作品。","time":"12月07日  12:21"},
+			{"nationalId":8,"title":"拭去历史的尘埃，揭秘书画国宝背后的故事","show_img":"img/national_pic8.png","cue":"在台北故宫博物院和日本京都博物馆展出的书画作品中，大部分都是国宝级的名品。但是它们大多年代久远，屡经改动，难辨真伪。《国家人文》与您一起走进中央美术学院美术馆，共同聆听邵彦博士为大家讲解专家是怎样看书画的。","time":"12月05日  14:31"},
+			{"nationalId":9,"title":"“工”逢“盛世”工笔这寂寞之道已经不寂寞","show_img":"img/national_pic9.png","cue":"工笔画在历史的进程中不断进行着审美价值的自我调节，从而在中国美术史中一直呈现出蓬勃的生命力。进入现代，随着文化的交融，工笔画用创作、理论再现着其传承的精神力量。《国家人文》邀您一起，探索工笔画背后的故事。","time":"01月09日  14:00"}
+		]
+	},
+	{
+		"name":"readcity",
+		"banner":"img/readcity_banner.png",
+		"data":[
+			{"readcityId":1,"title":"【二十四辑】借钱都要吃海鲜！？吃海鲜对他们来说到底有多重要？","show_img":"img/readcity_pic1.png","cue":"【二十四辑】借钱都要吃海鲜！？吃海鲜对他们来说到底有多重要？","time":"11月08日"},
+			{"readcityId":2,"title":"【二十三辑】天津没有夜生活！？那介似个嘛？","show_img":"img/readcity_pic2.png","cue":"【二十三辑】天津没有夜生活！？那介似个嘛？","time":"11月06日"},
+			{"readcityId":3,"title":"【二十二辑】戏精、小清新、时髦精、新知、生活家的非正经装X指南！","show_img":"img/readcity_pic3.png","cue":"【二十二辑】戏精、小清新、时髦精、新知、生活家的非正经装X指南！","time":"11月03日"},
+			{"readcityId":4,"title":"【二十一辑】这些高颜值的天津80、90后吧把传统玩出的新高度！","show_img":"img/readcity_pic4.png","cue":"【二十一辑】这些高颜值的天津80、90后吧把传统玩出的新高度！","time":"11月01日"},
+			{"readcityId":5,"title":"【二十辑】就连黄晓明都忍不住Cosplay的“青岛大姨”在青岛到底是一种什么样的存在","show_img":"img/readcity_pic5.png","cue":"【二十辑】就连黄晓明都忍不住Cosplay的“青岛大姨”在青岛到底是一种什么样的存在","time":"10月31日"},
+			{"readcityId":6,"title":"【十九辑】全球十大港口七个在中国！而这座空无一人的码头，居然是全世界最先进的港口！？","show_img":"img/readcity_pic6.png","cue":"【十九辑】全球十大港口七个在中国！而这座空无一人的码头，居然是全世界最先进的港口！？","time":"10月22日"},
+			{"readcityId":7,"title":"【十八辑】在中国啤酒发展史上竟然没有青岛什么事？","show_img":"img/readcity_pic7.png","cue":"【十八辑】在中国啤酒发展史上竟然没有青岛什么事？","time":"10月20日"},
+			{"readcityId":8,"title":"【十七辑】去过几次就以为懂青岛了？青岛才不是这样？","show_img":"img/readcity_pic8.png","cue":"【十七辑】去过几次就以为懂青岛了？青岛才不是这样？","time":"10月16日"},
+			{"readcityId":9,"title":"【十六辑】有句话不知道当讲不当讲，青岛人你真的很“浪”","show_img":"img/readcity_pic9.png","cue":"【十六辑】有句话不知道当讲不当讲，青岛人你真的很“浪”","time":"10月13日"}
+		]
+	},
+	{
+		"name":"find",
+		"data":[
+			{"findID":1,"show_img":"img/find_pic1.png"},
+			{"findID":2,"show_img":"img/find_pic2.png"},
+			{"findID":3,"show_img":"img/find_pic3.png"},
+			{"findID":4,"show_img":"img/find_pic4.png"},
+			{"findID":5,"show_img":"img/find_pic5.png"}
+		]
+	},
+	{
+		"name":"listInfo",
+		"data":[
+			{"listInfoId":1,"title":"2018国内最佳“佛系”目的地百代TOP20 | 转山转水转佛塔，不为修来世， 只为途中与你相见","show":"img/listInfo1.png","cue":"那一世，转山转水转佛塔，不为修来世，只为途中与你相见。","time":"01月04日"},
+			{"listInfoId":2,"title":"2018全球最佳跨年胜地百代TOP20 | 在绚丽烟火的夜空中，跟一年的好运气撞满怀！","show":"img/listInfo2.png","cue":"在绚丽烟火的夜空中，跟一年的好运气撞满怀！","time":"12月28日"},
+			{"listInfoId":3,"title":"2017全球最佳温泉胜地百代TOP20 | 我爱泡澡，皮肤好好，哇哦~","show":"img/listInfo3.png","cue":"我爱泡澡，皮肤好好，哇哦~","time":"12月21日"},
+			{"listInfoId":4,"title":"2018最不容错过的全球节庆百代TOP20（第一季） | 世界辣么大，跟着节日去旅行！","show":"img/listInfo4.png","cue":"世界辣么大，跟着节日去旅行！","time":"01月04日"},
+			{"listInfoId":5,"title":"2017国内最佳滑雪胜地百代TOP20 | 不必远去阿尔卑斯，在家门口就能享受滑雪的极致体验！","show":"img/listInfo5.png","cue":"不必远去阿尔卑斯，在家门口就能享受滑雪的极致体验！","time":"12月07日"},
+			{"listInfoId":6,"title":"2017全球暖冬度假胜地百代TOP20 | 当北方已经结霜，我们去哪里拥抱太阳？","show":"img/listInfo6.png","cue":"当北方已经结霜，我们去哪里拥抱太阳？","time":"1月30日"},
+			{"listInfoId":7,"title":"2017国外最佳滑雪胜地百代TOP20排行榜 | 在速度与激情中，滑动世界！","show":"img/listInfo7.png","cue":"在速度与激情中，滑动世界！","time":"11月23日"},
+			{"listInfoId":8,"title":"2017全球最佳潜水胜地百代TOP20排行榜 | 在这颗蓝色星球下，一起“海底总动员”","show":"img/listInfo8.png","cue":"在这颗蓝色星球下，一起“海底总动员”","time":"11月16日"}
+		]
+	},
+	{
+		"name":"tourism",
+		"data":[
+			{"tourismId":1,"title":"摇曳在尼罗河上的千载幽梦埃及文化探访之旅","banner":"img/tourism_pic1.png","cue":"寻址丝路消失的法老帝国","price":"￥14800"},
+			{"tourismId":2,"title":"看得见的北朝  齐鲁线","banner":"img/tourism_pic2.png","cue":"在遍地瑰宝的齐鲁大地上，寻觅神秘北朝的踪迹","price":"￥3280"},
+			{"tourismId":3,"title":"看得见的大宋  中原线","banner":"img/tourism_pic3.png","cue":"穿越纷纭动荡的王朝时代，遍访中原大地的遗世奇珍","price":"￥3480"}
+		]
+	}
+]

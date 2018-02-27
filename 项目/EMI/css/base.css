@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+html,body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header{
+	background: white;
+	position: relative;
+	z-index: 999;
+}
+
+header .C_title{
+	background: white;
+	border-bottom: 0.01rem solid #DDDDDD;
+	height: 2.53rem;
+	line-height: 2.53rem;
+	position: relative;
+}
+
+header .C_title>h3{
+	text-align: center;
+	width: 11.86rem;
+	height: 2.53rem;
+	line-height: 2.53rem;
+	margin: 0 auto;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+
+header .C_title .C_search{
+	position: absolute;
+	top: 0rem;
+	right: 1rem;
+}
+
+header .C_title .C_search i{
+	font-size: 0.76rem !important;
+	color: #949494;	
+}
+
+/*footer*/
+footer{
+	width: 100%;
+	height: 2.683rem;
+	border-top: 0.05rem solid #DDDDDD;
+	background: white;
+}
+
+footer ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+footer ul li {
+	height: 100%;
+}
+
+footer ul li {
+	font-size: 0.5rem;
+	color: black;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+footer ul li  span{
+	display: block;
+	text-align: center;
+	width: 1.02rem;
+	height: 1.02rem;
+	margin-bottom: 0.3rem;
+}
+
+footer ul li  span i{
+	font-size: 1.02rem !important;
+	color: black;
+}
+footer ul li:nth-child(2) i {
+	font-weight: 600;
+}

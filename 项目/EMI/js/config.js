@@ -1,0 +1,10 @@
+require.config({
+	paths:{
+		"jquery":"js/lib/jquery-1.7.1.min",
+		"loadHeaderFooter":"js/loadHeaderFooter",
+		"zepto":"js/lib/zepto.min",
+		"swiper":"js/lib/swiper.min",
+		"iscroll":"js/lib/iscroll-min",
+		"load_indexContainer":"js/load_indexContainer"
+	}
+})

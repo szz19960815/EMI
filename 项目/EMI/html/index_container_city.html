@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="css/culling.css" />
+
+<!--city-->
+<div class="city">
+	<ul></ul>
+</div>
+<!--推荐旅行-->
+<div class="index_container_list">
+	<div class="tourism">
+		<div class="tourism S_title">
+			<h3>推荐旅行</h3>
+			<p>经典人文路线推荐</p>
+		</div>
+		<ul></ul>
+	</div>
+</div>
+<script type="text/javascript">
+	$.ajax({
+		type:"get",
+		url:"mock/destination.json",
+		async:true,
+		dataType:"json",
+		success:function(data){
+			var tourism = data.data;
+			tourism = tourism.slice(0,5)
+			$.each(tourism, function(i) {
+//				console.log(tourism[i])
+				var _li = $("<li></li>");
+				var _img = $("<img src='"+tourism[i].imgSrc+"' />");					var _p1 = $("<p>"+tourism[i].title+"</p>");
+				var _p2 = $("<p>读城·"+tourism[i].title+"</p>");
+				var _p3 = $("<p>世界[观]不同</p>");
+				_li.append(_img).append(_p2).append(_p3);
+				$(".city ul").append(_li);		
+			});
+		}
+	});
+	$.ajax({
+		type:"get",
+		url:"mock/culling.json",
+		async:true,
+		dataType:"json",
+		success:function(data){
+			$.each(data, function(i) {
+				if(data[i].name == "tourism"){
+					var tourism = data[i].data;
+					$.each(tourism, function(i) {
+//						console.log(tourism[i])
+						var _li = $("<li></li>");	
+						var _a = $("<a></a>");
+						var _img = $("<img src='"+tourism[i].banner+"' />");
+						var _p1 = $("<p>"+tourism[i].title+"</p>");
+						var _p2 = $("<p>"+tourism[i].cue+"</p>");
+						var _p3 = $("<p>"+tourism[i].price+"</p>");
+						_a.append(_img);
+						_a.append(_p1);
+						_a.append(_p2);
+						_a.append(_p3);
+						_li.append(_a);
+						$(".tourism ul").append(_li);
+						
+					});
+				}
+			});
+		}
+	});
+</script>

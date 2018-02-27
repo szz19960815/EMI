@@ -1,0 +1,105 @@
+html,body{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+header{
+	height: 11rem;
+	box-shadow: 0px 3px 5px #888888;
+	background: url(../img/my_bg.png) no-repeat center center;
+	background-size: 100% auto;
+}
+main {
+	background: #eeeeee;
+	flex: 1;
+	padding:1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+main dl {
+	width: 6.66rem;
+	height: 7rem;
+	box-shadow: 0px 3px 5px #888888;
+	margin-bottom: 1.5rem;
+	border-radius: 5px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+main dl img {
+	width: 2rem;
+	height: 2rem;
+}
+main dl dd{
+	margin-top: 1.2rem;
+	font-size: 1rem;
+}
+footer li:nth-child(3) i{
+	color: #4dc1ea !important;
+}
+
+
+/*设置CSS*/
+.S_head{
+	height: 2.6rem;
+	background: #eeeeee;
+	box-shadow: none;
+	text-align: center;
+	font-size: 0.9rem;
+	line-height: 2.5rem;
+	position: relative;
+	width: 100%;
+}
+.S_head img{
+	height: 40%;
+	position: absolute;
+	top: 0.7rem;
+	left: 0.7rem;
+}
+.S_main{
+	background: white;
+	position: relative;
+}
+.S_main ul{
+	width: 100%;
+}
+.S_main ul li{
+	height: 2.7rem;
+	padding: 0.6rem 0;
+	font-size: 0.8rem;
+	width: 100%;
+}
+.S_main ul li img{
+	float: right;
+	height: 0.7rem;
+}
+.S_main ul li span{
+	float: right;
+	font-size: 0.7rem;
+	margin-right: 1.6rem;
+}
+.S_main button{
+	margin: 0 auto;
+	width: 14rem;
+	height: 2rem;
+	border-radius: 2rem;
+	background-color: #51bcea;
+	line-height: 2rem;
+	text-align: center;
+	color: white;
+	font-size: 1rem;
+}
+.S_main p{
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 2rem;
+	margin: auto;
+	opacity: 0;
+}

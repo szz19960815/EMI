@@ -1,0 +1,77 @@
+html,body{
+	min-height: 30rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background: white !important;
+}
+body>span{
+	position: fixed;
+	top: 1rem;
+	left: 0.76rem;
+	color: #51bcea;
+	font-size: 1.5rem;
+}	
+h2{
+	margin-top: 5.4rem;
+	font-size: 1.4rem;
+	margin-left: 1.5rem;
+	margin-bottom: 0.9rem;
+}
+.main{
+	padding: 0 1.4rem;
+	width: 100%;
+	position: relative;
+}
+.main input{
+	border: 0;
+	border-bottom: 1px solid #989898;
+	font-size: 0.9rem;
+	height: 1.8rem;
+	margin-top:1.6rem ;
+	padding: 0;
+}
+.main span{
+	color: #51bcea;
+	float: left;
+	font-size: 0.7rem;
+}
+.main span:nth-of-type(2){
+	float: right;
+}
+.main p{
+	font-style:normal;
+	color: red;
+	font-size: 0.66rem;
+	position: absolute;
+	bottom: -10%;
+	display: none;
+}
+button{
+	margin: 2.5rem auto 0;
+	height: 2rem;
+	width: 70%;
+	border-radius: 2rem;
+	background-color: #51bcea;
+	line-height: 2rem;
+	text-align: center;
+	color: white;
+	font-size: 0.9rem;
+}
+p{
+	margin-top: 2.9rem;
+	color: #989898;
+	font-size: 0.7rem;
+	text-align: center;
+}
+.other{
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 2.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.other i{
+	font-size: 2rem !important;
+}

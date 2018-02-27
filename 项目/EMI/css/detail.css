@@ -1,0 +1,283 @@
+html,body{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.box{
+	flex: 1;
+	overflow: hidden;
+}
+.D-header{
+	height: 15rem;
+	color: white;
+	padding-top: 2.5rem;
+}
+.top{
+	height: 2.5rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	margin: auto;
+	background-color: rgba(0,0,0,0);
+	color: white;
+}
+.top .m{
+	width: 72%;
+	height: 1.6rem;
+	border: 1px solid white;
+	border-radius:1.6rem ;
+	overflow: hidden;
+	position: relative;
+}
+.top .m i{
+	position: absolute;
+	left: 15%;
+	top : 3%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+}
+.top .m input{
+	width: 100%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	border: 0;
+	text-align: center;
+	background: none;
+}
+.top span:nth-child(1){
+	font-size: 2rem;
+	height: 2.5rem;
+	width: 1rem;
+	text-align: center;
+	display: inline-block;
+	line-height: 2.2rem;
+}
+.top span:nth-child(3) i{
+	font-size: 1rem !important;
+	font-weight: 400;
+}
+.D-header .mid p:nth-child(1){
+	width: 100%;
+	height: 2.6rem;
+	font-size: 2rem;
+	text-align: center;
+	color: white;
+}
+.D-header .mid p:nth-child(2),p:nth-child(3){
+	width: 100%;
+	height: 1.2rem;
+	font-size: 0.66rem;
+	text-align: center;
+	color: white;
+}
+.D-header .mid p:nth-child(4){
+	width: 6.4rem;
+	height: 1.2rem;
+	text-align: center;
+	margin: 0.4rem auto 0;
+	line-height: 1.2rem;
+	border-radius: 1.2rem;
+	border: 1px solid white;
+	font-size: 0.66rem;
+	text-align: center;
+	color: white;
+}
+.D-header .bot{
+	height: 6rem;
+	width: 100%;
+	overflow: hidden;
+}
+.D-header .bot ul{
+	width: 150%;
+	height: 100%;
+	display: flex;
+}
+.D-header .bot ul li{
+	display: flex;
+	height: 100%;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.66rem;
+}
+.D-header .bot ul li i{
+	display: block;
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	overflow: hidden;
+	text-align: center;
+	line-height: 2.5rem;
+	color: white;
+	margin-bottom: 0.4rem;
+}
+.D-header .bot ul li:nth-child(1) i{
+	background-color: #63d37b;
+	font-size: 1.2rem !important;
+}
+.D-header .bot ul li:nth-child(2) i{
+	background-color: #ff5929;
+	font-size: 1.2rem !important;
+}
+.D-header .bot ul li:nth-child(3) i{
+	background-color:#ffae00;
+	font-size: 0.8rem !important;
+}
+.D-header .bot ul li:nth-child(4) i{
+	background-color: #73ebff;
+	font-size: 1.2rem !important;
+}
+.D-header .bot ul li:nth-child(5) i{
+	background-color: deeppink;
+	font-size: 1.2rem !important;
+}
+.D-header .bot ul li:nth-child(6) i{
+	background-color: royalblue;
+	font-size: 1.2rem !important;
+}
+footer li:nth-child(2) i{
+	color: #4dc1ea !important;
+}
+.main{
+	background-color: #efefef;
+}
+.main .main1{
+	width: 100%;
+	position: relative;
+	padding:0.5rem 1rem 1.2rem;
+	background-color: white;
+	margin-bottom:0.5rem ;
+	overflow: hidden;
+}
+.main .main1 p{
+	font-size: 0.66rem;
+	margin-bottom: 0.5rem;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	padding: 0 0.8rem;
+	border-radius: 1.4rem;
+	border: 1px solid #ffb6a5;
+	background-color: #fff7f7;
+	color: #ff8663;
+	float: left;
+}
+.main .main1 span{
+	position: absolute;
+	right:0;
+	bottom: 0.5rem;
+	color: dodgerblue;
+	font-size: 0.66rem;
+	width: 2rem
+}
+.main .main2{
+	height: 19rem;
+	margin-bottom:0.5rem ;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.main .main2:last-child{
+	height: 11rem
+}
+.main .main2 h2{
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.8rem;
+}
+.main .main2 h2 img{
+	height: 50%;
+	margin: -0.1rem 0.5rem 0;
+}
+.main .main2 h2 span{
+	float: right;
+	font-size: 0.6rem;
+	margin: -0.1rem 0.5rem 0;
+	font-weight: 100;
+}
+.main .main2 h2 i{
+	font-weight: 200;
+	margin: -0.1rem 0.5rem 0;
+	color: #52beef;
+}
+.main .main2 .banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.main .main2 .banner img{
+	width: 100%;
+	height: 8rem;
+	display: block;
+}
+.main .main2 .banner p{
+	position: absolute;
+	color: white;
+	font-size: 1.2rem;
+	height: 1rem;
+	width: 100%;
+	top: 35%;
+	text-align: center;
+	z-index: 9;	
+	font-weight: 600;
+}
+.main .main2 .banner p:nth-of-type(2){
+	top : 55%;	
+	left:0;
+	right: 0;
+	margin: auto;
+	font-weight: 200;
+	width: 4.4rem;
+	height: 1.2rem;
+	text-align: center;
+	line-height: 1.2rem;
+	border-radius: 1.2rem;
+	border: 1px solid white;
+	font-size: 0.66rem;
+	text-align: center;
+	color: white;
+}
+.main .main2 .w{
+	width: 100%;
+	padding: 0.6rem 0 0;
+	flex: 1;
+}
+.main .main2 ._scroll{
+	width: 210%;
+	height: 8.5rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+}
+.main .main2 ._scroll dl{
+	height: 8rem;
+	border-radius: 3px;
+	overflow: hidden;
+	width: 7rem;
+	float: left;
+	box-shadow: 0px 3px 5px #888888;
+	border-bottom: 1px solid white;
+}
+.main .main2 ._scroll dl dt img{
+	width: 100%;
+}
+.main .main2 ._scroll dl dd{
+	font-size: 0.66rem;
+	padding: 0.5rem;
+}
+.map{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	display: none;
+	background-color: white;
+}
+footer li:nth-child(2) i{
+	color: #4dc1ea !important;
+}
